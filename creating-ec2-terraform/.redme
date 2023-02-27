@@ -1,0 +1,13 @@
+steps for adding key to 7SXl0oMKY6F3lD9sANIJE4M8C8JgoSHJ0ReWQhh8vgCJjc2b69NNPGMwsSv1t8sv9
+1: generate a local key (ssh-keygen rsa)
+2: after generating key we got 2 file 1 is privtae and 2 is public
+3: then we need resource of aws_key_pair (copy resource)
+5: dding key name a link your local generated public key with value 
+        = file"$(path.module)/filename"
+6: then run using output function 
+    ourput key-tf{
+        value = "localnameofkey.keyname.attributename"
+    }
+7: and run terraform plan
+8: run terraform apply
+
